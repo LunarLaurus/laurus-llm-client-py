@@ -1,18 +1,15 @@
 [build-system]
-requires = ["setuptools>=64", "wheel"]
+requires = [ "setuptools>=64", "wheel",]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "laurus-llm-client"
-version = "0.0.3"
+version = "0.1.0"
 description = "Local LLM client"
 readme = "README.md"
 requires-python = ">=3.10"
-
-dependencies = [
-    "requests>=2.28",
-]
+dependencies = [ "requests>=2.28",]
 
 [tool.setuptools.packages.find]
-where = ["."]
-include = ["laurus_llm_client*"]
+where = [ ".",]
+include = [ "laurus_llm_client*",]
